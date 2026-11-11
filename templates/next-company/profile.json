@@ -1,0 +1,31 @@
+{
+  "id": "next-company",
+  "version": "0.2.0",
+  "status": "minimal-executable",
+  "reference": "D:/Trabalhos-Github/sitebasenext",
+  "target": "next",
+  "language": "typescript",
+  "router": "app",
+  "styles": "scss",
+  "alias": "@/* -> src/*",
+  "directories": [
+    "src/app",
+    "src/components",
+    "src/partials",
+    "src/settings",
+    "src/data",
+    "src/schemas",
+    "src/styles",
+    "src/lib",
+    "src/types",
+    "public"
+  ],
+  "rules": "rules/next-company/mappings.json",
+  "policy": {
+    "preserveSourceAppearance": true,
+    "preserveSourceBehavior": true,
+    "copySecrets": false,
+    "addTemplateFeaturesAutomatically": false,
+    "requireGeminiConsentPerRequest": true
+  }
+}

@@ -1,0 +1,1 @@
+Pendente: validar sintaxe, tipos, build, recursos, rotas, formulários e comparação visual em condições equivalentes. Build aprovado não comprova fidelidade. Não disparar e-mails reais durante testes. Falhas em dependências bloqueiam também partes dependentes; somente partes independentes continuam.

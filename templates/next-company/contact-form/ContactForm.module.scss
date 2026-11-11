@@ -1,0 +1,192 @@
+$color-purple-2: #4a2fe0;
+$color-purple-3: #6a46fc;
+$color-white-bg: #f4eef6;
+
+.contatoForm {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 20px;
+  font-family: var(--font-open-sans);
+
+  @media (max-width: 840px) {
+    width: 100%;
+  }
+
+  .boxInput {
+    display: flex;
+    gap: 10px;
+  }
+
+  .inputForm {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    @media (max-width: 840px) {
+      width: 100%;
+    }
+
+    label {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-left: 0;
+
+      @media (max-width: 840px) {
+        font-size: 0.8rem;
+      }
+    }
+
+    input,
+    select,
+    textarea {
+      padding: 10px 20px;
+      border: 1px solid #afafaf;
+      border-radius: 5px;
+      width: 100%;
+      transition: all 0.3s ease;
+
+      @media (max-width: 400px) {
+        font-size: 0.8rem;
+      }
+
+      &:focus {
+        outline: none;
+        border: 1px solid #747474;
+        transition: all 0.3s ease;
+      }
+    }
+
+    select {
+      padding: 6.5px 15px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 150px;
+      max-height: 150px;
+      resize: none;
+    }
+  }
+
+  .btnSubmit {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background-color: $color-purple-2;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $color-purple-3;
+      transition: all 0.3s ease;
+      color: $color-white-bg;
+    }
+  }
+}
+
+.formSuccess {
+  color: #949494;
+  font-size: 0.9em;
+  padding: 5px 10px;
+  border-radius: 10px;
+  width: fit-content;
+  font-weight: 500;
+}
+
+// versão included - para estilização diferente da página de contato, para outras variações criar e declarar como prop do ContactForm
+.contatoFormIncluded {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 20px;
+  font-family: var(--font-open-sans);
+
+  @media (max-width: 840px) {
+    width: 100%;
+  }
+
+  .boxInput {
+    display: flex;
+    gap: 10px;
+
+    @media (max-width: 530px) {
+      flex-direction: column;
+    }
+  }
+
+  .inputForm {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    @media (max-width: 840px) {
+      width: 100%;
+    }
+
+    label {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-left: 0;
+
+      @media (max-width: 840px) {
+        font-size: 1rem;
+      }
+    }
+
+    input,
+    select,
+    textarea {
+      padding: 10px 20px;
+      border: 1px solid #afafaf;
+      border-radius: 5px;
+      width: 100%;
+      transition: all 0.3s ease;
+      background-color: rgb(238, 238, 238);
+
+      @media (max-width: 400px) {
+        font-size: .9rem;
+      }
+
+      &:focus {
+        outline: none;
+        border: 1px solid #747474;
+        transition: all 0.3s ease;
+      }
+    }
+
+    select {
+      padding: 6.5px 15px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 150px;
+      max-height: 150px;
+      resize: none;
+    }
+  }
+
+  .btnSubmit {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background-color: $color-purple-2;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $color-purple-3;
+      transition: all 0.3s ease;
+      color: $color-white-bg;
+    }
+  }
+}

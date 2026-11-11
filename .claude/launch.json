@@ -1,0 +1,47 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "estandes-react",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "D:/Trabalhos-Github/estandes-next-react-20261029-v2/project",
+        "run",
+        "start",
+        "--",
+        "-p",
+        "3456"
+      ],
+      "port": 3456
+    },
+    {
+      "name": "mtsz-form",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "D:/ppnet/.work/mtsz-form-original/project",
+        "run",
+        "start",
+        "--",
+        "-p",
+        "3460"
+      ],
+      "port": 3460
+    },
+    {
+      "name": "hanslaser-regras",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "D:/ppnet/.work/hanslaser-regras/project",
+        "run",
+        "start",
+        "--",
+        "-p",
+        "3461"
+      ],
+      "port": 3461
+    }
+  ]
+}

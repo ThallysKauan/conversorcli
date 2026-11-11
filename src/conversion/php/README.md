@@ -1,0 +1,1 @@
+Pendente: parser PHP, tabela de símbolos e resolução de includes. Não executar o PHP de entrada. Substituições por regex não constituem um conversor. Padrões não suportados viram pendências antes de eventual auxílio do Gemini.

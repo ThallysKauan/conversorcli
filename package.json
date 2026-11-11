@@ -1,0 +1,28 @@
+{
+  "name": "ppnet",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "ppnet": "bin/ppnet.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node bin/ppnet.mjs start",
+    "doctor": "node bin/ppnet.mjs doctor",
+    "check": "tsc --noEmit",
+    "test": "node --test tests/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "parse5": "^8.0.1",
+    "php-parser": "^3.7.0",
+    "postcss": "^8.5.32",
+    "prettier": "^3.9.10"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "version": "0.8.0",
+  "status": "partially-executable",
+  "mappings": {
+    "pages": "src/app/(paginas)",
+    "header": "src/partials/Topo/index.tsx",
+    "footer": "src/partials/Rodape/index.tsx",
+    "siteSettings": "src/settings/settings.ts",
+    "catalogData": "src/data/pagesData.ts",
+    "contactForm": "src/components/ContactForm/ContactForm.tsx",
+    "contactValidation": "src/schemas/form.ts",
+    "emailHandler": "src/app/api/send-email/route.ts",
+    "globalStyles": "src/styles/globals.scss",
+    "assets": "public",
+    "sections": "src/components/Secoes"
+  },
+  "constraints": [
+    "Agrupar páginas em pagesData apenas quando estruturas forem compatíveis.",
+    "Preservar caminhos de recursos e URLs ou registrar mapeamento explícito.",
+    "Não inserir formulário global, fontes, analytics ou componentes do template ausentes na origem.",
+    "Código suspeito deve ser bloqueado para revisão, não reproduzido automaticamente.",
+    "Interações com regra viram componentes React em src/components/behaviors; páginas com JavaScript sem regra executam os scripts da origem (OriginalScripts); eval, new Function e document.write continuam bloqueados."
+  ],
+  "conversion": {
+    "forms": "template",
+    "formMarkup": "original",
+    "omitIncludes": [
+      "inc-midia/contato-envio.php",
+      "inc-midia/form/form.php"
+    ],
+    "keywordConfig": "inc-midia/configuracoes-gerais.php",
+    "thirdPartyScripts": [
+      {
+        "host": "googletagmanager.com",
+        "name": "Google Tag Manager / gtag.js"
+      },
+      {
+        "host": "google-analytics.com",
+        "name": "Google Analytics"
+      },
+      {
+        "host": "d335luupugsy2.cloudfront.net",
+        "name": "RD Station loader"
+      },
+      {
+        "host": "connect.facebook.net",
+        "name": "Meta Pixel"
+      },
+      {
+        "host": "kit.fontawesome.com",
+        "name": "Font Awesome Kit"
+      },
+      {
+        "host": "static.elfsight.com",
+        "name": "Elfsight widgets"
+      },
+      {
+        "host": "vlibras.gov.br",
+        "name": "VLibras"
+      },
+      {
+        "host": "www.google.com",
+        "name": "Google reCAPTCHA"
+      },
+      {
+        "host": "yaslip.com.br",
+        "name": "Ferramentas Yaslip"
+      },
+      {
+        "host": "mrfmidiadigital.com.br",
+        "name": "Ferramentas MRF"
+      }
+    ],
+    "strict": true,
+    "legacyRedirects": false
+  }
+}

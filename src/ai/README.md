@@ -1,0 +1,1 @@
+Pendente: integração Gemini. Perguntar antes de CADA envio, mostrar escopo e motivo, remover segredos, registrar consentimento, modelo e arquivos envolvidos. Não registrar chave. Recusa ou falha mantém a parte inacabada. Respostas precisam de validação; não executar comandos sugeridos pelo modelo.
